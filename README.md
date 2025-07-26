@@ -91,3 +91,28 @@ php artisan test --env=testing
 ```
 
 All tests should pass. Seeding ensures `translations` table has enough data to simulate production load.
+
+---
+
+### 📘 Swagger API Docs
+
+Install and publish Swagger:
+
+```bash
+composer require "darkaonline/l5-swagger"
+php artisan vendor:publish --provider="L5Swagger\L5SwaggerServiceProvider"
+```
+
+Generate docs:
+
+```bash
+php artisan l5-swagger:generate
+```
+
+Access docs at:
+
+```
+http://localhost:8000/api/documentation
+```
+
+Customize config in `config/l5-swagger.php`.
