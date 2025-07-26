@@ -56,6 +56,28 @@ Got it! Here's your updated, short and clear README section with **test migratio
 
 ---
 
+### 🔐 Default Test User
+
+Email: `gerardo@example.com`  
+Password: `password`
+
+---
+
+### 📚 API Endpoints
+
+| Method | Endpoint                      | Description              |
+|--------|-------------------------------|--------------------------|
+| POST   | /login                        | Authenticate             |
+| POST   | /logout                       | Logout                   |
+| GET    | /me                           | Authenticated user       |
+| GET    | /translations                 | List translations        |
+| POST   | /translations                 | Create translation       |
+| PUT    | /translations/{id}           | Update translation       |
+| DELETE | /translations/{id}           | Soft delete translation  |
+| GET    | /translations/export/{locale}| Export by locale (JSON)  |
+
+---
+
 ### ✅ Translation API Tests
 
 Feature tests to verify core Translation API functionality:
