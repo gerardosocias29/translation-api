@@ -16,10 +16,10 @@ class Translation extends Model
      * @var array<string>
      */
     protected $fillable = [
-        'group',
         'key',
         'value',
         'locale',
+        'tag',
     ];
 
     /**
@@ -32,6 +32,7 @@ class Translation extends Model
         return [
             'value' => 'string',
             'locale' => 'string',
+            'tag' => 'string',
         ];
     }
     
