@@ -86,4 +86,4 @@ php artisan db:seed --env=testing
 php artisan test --env=testing
 ```
 
-All tests should pass. Seeding ensures `test_json_export_performance` has enough data to simulate production load.
+All tests should pass. Seeding ensures `translations` table has enough data to simulate production load.
