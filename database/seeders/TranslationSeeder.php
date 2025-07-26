@@ -13,6 +13,9 @@ class TranslationSeeder extends Seeder
      */
     public function run(): void
     {
-        Translation::factory()->count(120000)->create();
+        Translation::factory()->count(env('TRANSLATION_SEED_COUNT', 120000))->create([
+            'locale' => 'en',
+            'tag' => 'web',
+        ]);
     }
 }
