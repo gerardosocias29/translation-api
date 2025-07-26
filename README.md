@@ -51,3 +51,39 @@ This seeds a default test user.
 ```bash
 php artisan serve
 ```
+
+Got it! Here's your updated, short and clear README section with **test migration**, **seeding**, and **env setup** for the `test_json_export_performance`:
+
+---
+
+### ✅ Translation API Tests
+
+Feature tests to verify core Translation API functionality:
+
+* **Create**: Add new translations
+* **Update**: Modify entries
+* **Search**: Filter by key/tag/locale
+* **Delete**: Soft delete
+* **Export**: Ensure JSON export is fast (<500ms)
+
+#### Setup
+
+Make sure `.env.testing` is configured:
+
+```env
+DB_CONNECTION=mysql
+DB_DATABASE=translations-api
+DB_USERNAME=root
+DB_PASSWORD=
+TRANSLATION_SEED_COUNT=10000
+```
+
+#### Run tests
+
+```bash
+php artisan migrate --env=testing
+php artisan db:seed --env=testing
+php artisan test --env=testing
+```
+
+All tests should pass. Seeding ensures `test_json_export_performance` has enough data to simulate production load.
