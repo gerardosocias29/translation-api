@@ -48,13 +48,7 @@ class TranslationController extends Controller
             $query->where('locale', $request->locale);
         }
 
-        if ($request->filled('page')) {
-            $query->paginate(50, ['*'], 'page', $request->page);
-        } else {
-            $query->paginate(50);
-        }
-        
-        return response()->json($query->get());
+        return response()->json($query->paginate(50));
     }
 
     /**
