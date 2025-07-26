@@ -70,6 +70,10 @@ Feature tests to verify core Translation API functionality:
 
 Make sure `.env.testing` is configured:
 
+```bash
+cp .env .env.testing
+```
+
 ```env
 DB_CONNECTION=mysql
 DB_DATABASE=translations-api
