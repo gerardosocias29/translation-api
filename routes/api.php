@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use Illuminate\Http\Request;
 
 Route::post('/login', [AuthController::class, 'login']);
 
