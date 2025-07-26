@@ -1,6 +1,6 @@
-# Translation API – Laravel Sanctum Auth + Vue Frontend
+# Translation API – Laravel Sanctum Auth
 
-A starter API project using Laravel Sanctum for authentication and a Vue frontend.
+A starter API project using Laravel Sanctum for authentication.
 
 ---
 
