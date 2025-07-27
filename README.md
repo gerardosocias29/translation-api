@@ -52,8 +52,6 @@ This seeds a default test user.
 php artisan serve
 ```
 
-Got it! Here's your updated, short and clear README section with **test migration**, **seeding**, and **env setup** for the `test_json_export_performance`:
-
 ---
 
 ### 🔐 Default Test User
